@@ -2,20 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>T03Z01</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   
+    <title>T03Z05</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body>   
-	<div class="container">
-		
-	</div>
+ <div id="converter">
+
+	<div class="input-group">
+    	<label >Wybierz plik w formacie MARKDOWN i konwertuj go do HTML</label>
+    </div>
+
+    <div class="input-group">
+        <label class="input-group-btn">
+            
+            <span id="converterBtn" class="btn btn-primary btn-info">
+            	<input id="converterInput" type="file" placeholder="Wybierz plik" />
+                <span class="btn-text"> Wybierz plik</span>
+            </span>
+        </label>
+        
+    </div>
+
+    <div id="convertCode">
+        <textarea class="form-control" rows="6" placeholder="Skonwertowany do .html kod .md"></textarea>
+        <br />
+        <button id="selectBtn" type="button" class="btn btn-info">Wybierz i kopiuj</button>
+    </div>
+
+</div>
 
 
-    
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
-</body>
+</body>    
 </html>

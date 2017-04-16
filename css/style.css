@@ -1,14 +1,47 @@
-body
-{
-    width: 100%;
-
-    text-align: center;
-
+body {
     background: #fff;
+    color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.container {
-    width:800px;
-    margin:0 auto;
+#converter {
+	width:800px;
+	margin:30px auto;
 }
 
+#converterInput: {
+	height:30px;
+}
+
+textarea {
+    width: 800px;
+    height: 250px;
+}
+
+.btn-text {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 16px;
+    width: 102px;
+    padding: 2px 0;
+    height: 30px;
+    background: #31b0d5;
+    border: 1px solid #fff;
+}
+
+.btn-text:focus, .btn-text:hover {
+	background-color: #31b0d5;
+    border-color: #fff;
+}
+
+input#converterInput {
+	color:#1a1a1a;
+}
+
+input#converterInput:focus, 
+input#converterInput:hover {
+    border: 0;
+    outline:none;
+}
